@@ -1,0 +1,8 @@
+/node_modules
+.idea
+.lock
+composer.lock
+
+# OSX Specific files
+.DS_Store
+/__MACOXS
