@@ -345,8 +345,8 @@ class AddchatModel extends Model
                 "$this->ac_messages_tb.dt_updated",
                 "$this->ac_messages_tb.message",
 
-                DB::raw("(SELECT PR.fullname  FROM $this->profiles_tb  PR  WHERE PR.id  = $this->ac_messages_tb.m_from) m_from_username"),
-                DB::raw("(SELECT PR2.fullname FROM $this->profiles_tb  PR2 WHERE PR2.id = $this->ac_messages_tb.m_to) m_to_username"),
+                DB::raw("(SELECT PR.fullname  FROM $this->profiles_tb  PR  WHERE PR.user_id  = $this->ac_messages_tb.m_from) m_from_username"),
+                DB::raw("(SELECT PR2.fullname FROM $this->profiles_tb  PR2 WHERE PR2.user_id = $this->ac_messages_tb.m_to) m_to_username"),
                 DB::raw("(SELECT UR.$this->users_tb_email  FROM $this->users_tb UR WHERE UR.$this->users_tb_id = $this->ac_messages_tb.m_from)
                     m_from_email"),
                 DB::raw("(SELECT UR2.$this->users_tb_email FROM $this->users_tb UR2 WHERE UR2.$this->users_tb_id = $this->ac_messages_tb.m_to) 
@@ -363,8 +363,8 @@ class AddchatModel extends Model
                 DB::raw("ANY_VALUE($this->ac_messages_tb.dt_updated) as dt_updated"),
                 DB::raw("ANY_VALUE($this->ac_messages_tb.message) as message"),
                 
-                DB::raw("ANY_VALUE((SELECT PR.fullname  FROM $this->profiles_tb  PR  WHERE PR.id  = $this->ac_messages_tb.m_from)) as m_from_username"),
-                DB::raw("ANY_VALUE((SELECT PR2.fullname FROM $this->profiles_tb  PR2 WHERE PR2.id = $this->ac_messages_tb.m_to)) as m_to_username"),
+                DB::raw("ANY_VALUE((SELECT PR.fullname  FROM $this->profiles_tb  PR  WHERE PR.user_id  = $this->ac_messages_tb.m_from)) as m_from_username"),
+                DB::raw("ANY_VALUE((SELECT PR2.fullname FROM $this->profiles_tb  PR2 WHERE PR2.user_id = $this->ac_messages_tb.m_to)) as m_to_username"),
                 DB::raw("ANY_VALUE((SELECT UR.$this->users_tb_email  FROM $this->users_tb UR WHERE UR.$this->users_tb_id = $this->ac_messages_tb.m_from)) as m_from_email"),
                 DB::raw("ANY_VALUE((SELECT UR2.$this->users_tb_email FROM $this->users_tb UR2 WHERE UR2.$this->users_tb_id = $this->ac_messages_tb.m_to)) as m_to_email"),
             );
@@ -397,8 +397,8 @@ class AddchatModel extends Model
             "$this->ac_messages_tb.dt_updated",
             "$this->ac_messages_tb.m_to_delete",
             "$this->ac_messages_tb.m_from_delete",
-            DB::raw("(SELECT PR.avatar  FROM $this->profiles_tb PR WHERE PR.id    = $this->ac_messages_tb.m_from) m_from_image"),
-            DB::raw("(SELECT PR2.avatar FROM $this->profiles_tb PR2 WHERE PR2.id  = $this->ac_messages_tb.m_to)   m_to_image"),
+            DB::raw("(SELECT PR.avatar  FROM $this->profiles_tb PR WHERE PR.user_id    = $this->ac_messages_tb.m_from) m_from_image"),
+            DB::raw("(SELECT PR2.avatar FROM $this->profiles_tb PR2 WHERE PR2.user_id  = $this->ac_messages_tb.m_to)   m_to_image"),
         ));
 
         // group query for removing deleted messages

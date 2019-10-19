@@ -90,7 +90,7 @@ class ApiController extends Controller
 	
 		// input and validate
 		$validator = Validator::make($request->all(), [
-			'user'    => 'numeric|gte:1',
+			'user'    => 'required|numeric|min:1|regex:^[1-9][0-9]*$^',
 			'limit'   => 'numeric',
 		]);
 		
@@ -271,7 +271,7 @@ class ApiController extends Controller
 
 		// input and validate
 		$validator = Validator::make($request->all(), [
-			'user'         	=> 'required|numeric|gte:1',
+			'user'         	=> 'required|numeric|min:1|regex:^[1-9][0-9]*$^',
 			'message'       => 'required|max:2000',
 		]);
 		
@@ -362,7 +362,7 @@ class ApiController extends Controller
 		$validator = Validator::make($request->all(), [
 			'status'        => 'required',
 			'fullname'   	=> 'required',
-			'user_id'       => 'required|numeric|gte:1',
+			'user_id'       => 'required|numeric|min:1|regex:^[1-9][0-9]*$^',
 			'image'         => 'image|mimes:jpg,JPG,jpeg,JPEG,png,PNG|max:5000000|nullable',
 		]);
 		
@@ -525,9 +525,9 @@ class ApiController extends Controller
 		$validator = Validator::make($request->all(), [
 			'site_name'				=> 'required',
 			'footer_text'			=> 'required',
-			'admin_user_id' 		=> 'required|numeric|gte:1',
+			'admin_user_id' 		=> 'required|numeric|min:1|regex:^[1-9][0-9]*$^',
 			'session_user_id'       => 'required',
-			'pagination_limit'      => 'required|numeric|gte:1',
+			'pagination_limit'      => 'required|numeric|min:1|regex:^[1-9][0-9]*$^',
 			'img_upload_path'		=> 'required',
 			'assets_path'			=> 'required',
 			'users_table'			=> 'required',

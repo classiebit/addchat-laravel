@@ -1,5 +1,6 @@
 {
     "name": "classiebit/addchat-laravel",
+    "version": "1.0.0",
     "description": "Addchat Laravel",
     "type": "library",
     "license": "MIT",

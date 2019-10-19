@@ -13,7 +13,7 @@ class AcSettingsTableSeeder extends Seeder
     public function run()
     {
         $setting = \DB::table('ac_settings')->where('id', 1)->first();
-        if(!$settings)
+        if(!$setting)
         {
             \DB::table('ac_settings')->insert(array (
                 0 => 

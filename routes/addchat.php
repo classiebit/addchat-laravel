@@ -16,10 +16,11 @@ Route::group([
     'as'    => 'addchat.'
 ], function() {
 
+    $namespace = '\Classiebit\Addchat\Http\Controllers';
     // API ROUTES
-    Route::prefix('addchat_api')->group(function () {
-        $controller = "ApiController";
-        
+    Route::prefix('addchat_api')->group(function () use($namespace) {
+        $controller = $namespace."\ApiController";
+
         // set & get lang
         Route::post('get_lang', function() {
 
