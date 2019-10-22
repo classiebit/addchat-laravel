@@ -117,4 +117,5 @@ return [
     'widget_config'             => "Configuration du widget",
     'realtime'                  => "Temps réel",
     'notification'              => "Notification",
+    'logout_login'              => 'Logout & Login again to see effects',
 ];

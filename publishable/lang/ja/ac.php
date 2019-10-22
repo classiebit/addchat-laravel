@@ -117,4 +117,5 @@ return [
     'widget_config'             => "ウィジェット構成",
     'realtime'                  => "リアルタイム",
     'notification'              => "通知",
+    'logout_login'              => 'Logout & Login again to see effects',
 ];

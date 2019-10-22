@@ -139,6 +139,7 @@ return [
     'widget_config'             => 'Widget Config',
     'realtime'                  => 'Realtime',
     'notification'              => 'Notification',
+    'logout_login'              => 'Logout & Login again to see effects',
 
 
 ];

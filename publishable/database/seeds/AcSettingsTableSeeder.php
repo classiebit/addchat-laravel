@@ -103,8 +103,8 @@ class AcSettingsTableSeeder extends Seeder
                 12 => 
                 array (
                     'id' => 13,
-                    's_name' => 'session_user_id',
-                    's_value' => 'user_id',
+                    's_name' => 'footer_url',
+                    's_value' => 'https://classiebit.com/addchat-laravel-pro',
                     'dt_updated' => '2019-09-19 10:22:49',
                 ),
             ));

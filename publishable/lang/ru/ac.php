@@ -117,4 +117,5 @@ return [
     'widget_config'             => "Виджет Конфиг",
     'realtime'                  => "В реальном времени",
     'notification'              => "Уведомление",
+    'logout_login'              => 'Logout & Login again to see effects',
 ];

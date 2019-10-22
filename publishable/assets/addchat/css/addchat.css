@@ -1,5 +1,5 @@
 /*!
- * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 .fa,
@@ -1296,6 +1296,11 @@ readers do not read off random characters that represent icons */
 .fa-business-time:before
 {
     content: '\f64a';
+}
+
+.fa-buy-n-large:before
+{
+    content: '\f8a6';
 }
 
 .fa-buysellads:before
@@ -3563,6 +3568,16 @@ readers do not read off random characters that represent icons */
     content: '\f292';
 }
 
+.fa-hat-cowboy:before
+{
+    content: '\f8c0';
+}
+
+.fa-hat-cowboy-side:before
+{
+    content: '\f8c1';
+}
+
 .fa-hat-wizard:before
 {
     content: '\f6e8';
@@ -4363,6 +4378,11 @@ readers do not read off random characters that represent icons */
     content: '\f136';
 }
 
+.fa-mdb:before
+{
+    content: '\f8ca';
+}
+
 .fa-medal:before
 {
     content: '\f5a2';
@@ -4593,6 +4613,11 @@ readers do not read off random characters that represent icons */
     content: '\f6fc';
 }
 
+.fa-mouse:before
+{
+    content: '\f8cc';
+}
+
 .fa-mouse-pointer:before
 {
     content: '\f245';
@@ -4726,6 +4751,11 @@ readers do not read off random characters that represent icons */
 .fa-optin-monster:before
 {
     content: '\f23c';
+}
+
+.fa-orcid:before
+{
+    content: '\f8d2';
 }
 
 .fa-osi:before
@@ -5296,6 +5326,11 @@ readers do not read off random characters that represent icons */
 .fa-receipt:before
 {
     content: '\f543';
+}
+
+.fa-record-vinyl:before
+{
+    content: '\f8d9';
 }
 
 .fa-recycle:before
@@ -6278,6 +6313,11 @@ readers do not read off random characters that represent icons */
     content: '\f5c3';
 }
 
+.fa-swift:before
+{
+    content: '\f8e1';
+}
+
 .fa-swimmer:before
 {
     content: '\f5c4';
@@ -6751,6 +6791,11 @@ readers do not read off random characters that represent icons */
 .fa-uikit:before
 {
     content: '\f403';
+}
+
+.fa-umbraco:before
+{
+    content: '\f8e8';
 }
 
 .fa-umbrella:before
@@ -7422,7 +7467,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.10.2 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face
@@ -8496,7 +8541,7 @@ readers do not read off random characters that represent icons */
 #addchat-bot-admin .c-radio-group .c-radio-label
 {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: inherit;
 
     position: relative;
@@ -8570,7 +8615,7 @@ readers do not read off random characters that represent icons */
 #addchat-bot-admin .c-checkbox-group .c-checkbox-label
 {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: inherit;
 
     position: relative;
@@ -8947,7 +8992,7 @@ readers do not read off random characters that represent icons */
 {
     float: left;
 
-    width: 15%;
+    width: 35%;
     margin: 1.5rem 2rem 1rem 0;
 
     border-radius: 12px;
@@ -8990,7 +9035,7 @@ readers do not read off random characters that represent icons */
 #addchat-bot-admin .c-messages .c-message .c-timestamp
 {
     font-size: .5rem;
-    font-weight: 400;
+    font-weight: 500;
 
     position: absolute;
     bottom: -.9rem;
@@ -9027,7 +9072,7 @@ readers do not read off random characters that represent icons */
 #addchat-bot-admin .c-messages .c-message .c-bubble
 {
     font-size: .9rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.3;
 
     display: inline-block;
@@ -9629,7 +9674,7 @@ readers do not read off random characters that represent icons */
 #addchat-bot-admin .c-quote .c-text
 {
     font-size: .7rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.2;
 
     overflow: hidden;
@@ -9765,7 +9810,7 @@ readers do not read off random characters that represent icons */
 #addchat-bot-admin .c-send .c-send-textarea
 {
     font-size: .8rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.2;
 
     position: absolute;
@@ -10072,6 +10117,30 @@ readers do not read off random characters that represent icons */
 {
     animation: pulsate-fwd .5s ease-in-out both;
 }
+#addchat-bubble .c-bubble-inner .c-bubble-pop
+{
+    font-size: .7rem;
+    font-weight: 600;
+
+    position: absolute;
+    top: 0;
+
+    padding: .5rem .4rem .5rem .4rem;
+
+    transition: .1s all ease-in;
+    transform: scale(0);
+
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+#addchat-bubble .c-bubble-inner:hover .c-bubble-pop
+{
+    top: -50%;
+
+    transition: .2s all ease-out; 
+    transform: scale(1);
+}
 
 #addchat-bot .c-card,
 #addchat-bot-admin .c-card
@@ -10302,7 +10371,7 @@ readers do not read off random characters that represent icons */
 #addchat-bot-admin .c-gbuddy .c-brand-subtitle
 {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 500;
 
     margin-top: 3rem;
 
@@ -10327,7 +10396,7 @@ readers do not read off random characters that represent icons */
 #addchat-bot-admin .c-gbuddy .c-team-member .c-subtitle
 {
     font-size: .9rem;
-    font-weight: 400;
+    font-weight: 500;
 
     margin-top: .5rem; 
 
@@ -10569,7 +10638,7 @@ readers do not read off random characters that represent icons */
 #addchat-bot .c-footer-text
 {
     font-size: .55rem;
-    font-weight: 400;
+    font-weight: 500;
 
     z-index: 999999 !important;
 
@@ -10873,7 +10942,7 @@ readers do not read off random characters that represent icons */
 {
     line-height: .8;
 
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     right: 2%;
     bottom: 3%;
@@ -10914,7 +10983,7 @@ readers do not read off random characters that represent icons */
 
 #addchat-bot-admin
 {
-    position: absolute;
+    position: fixed;
     z-index: 9999; 
     right: 2%;
     bottom: 3%;
@@ -10979,14 +11048,17 @@ readers do not read off random characters that represent icons */
 
     position: absolute;
     top: .4rem;
-    right: 2.25rem;
+    right: 0;
+    left: 1.2rem;
 
     width: .5rem;
     height: .5rem;
+    margin: auto;
     padding: .1rem;
 
     transform: scale(.9);
     transform: scale(.9); 
+    text-align: center;
     text-indent: .5rem;
 
     border: 1px solid #fff;
@@ -11039,8 +11111,6 @@ readers do not read off random characters that represent icons */
 #addchat-bot.c-resize-s .c-menu .c-menu-item .c-n-dot,
 #addchat-bot-admin.c-resize-s .c-menu .c-menu-item .c-n-dot
 {
-    right: 1.9rem;
-
     text-indent: .5rem;
 }
 
@@ -11475,12 +11545,17 @@ readers do not read off random characters that represent icons */
     justify-content: space-between;
 }
 
+html
+{
+    font-size: 100%;
+}
+
 #addchat-bot,
 #addchat-bot-admin
 {
     font-family: inherit;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 100%;
+    font-weight: 500;
     line-height: 1.15;
 
     margin: 0; 

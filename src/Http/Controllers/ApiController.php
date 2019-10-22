@@ -38,7 +38,6 @@ class ApiController extends Controller
 
 		$data['config'] 						= array();
 		$data['config']['site_name'] 			= $this->AC_SETTINGS->site_name;
-		$data['config']['footer_text'] 			= $this->AC_SETTINGS->footer_text;
 		$data['config']['site_logo'] 			= $this->AC_SETTINGS->site_logo;
 		$data['config']['chat_icon'] 			= $this->AC_SETTINGS->chat_icon;
 		$data['config']['logged_user_id'] 		= $this->AC_SETTINGS->logged_user_id;
@@ -46,12 +45,13 @@ class ApiController extends Controller
 		$data['config']['assets_path']			= $this->AC_SETTINGS->assets_path;
 		$data['config']['is_admin']				= $this->AC_SETTINGS->is_admin;
 		$data['config']['admin_user_id']		= $this->AC_SETTINGS->admin_user_id;
-		$data['config']['session_user_id']		= $this->AC_SETTINGS->session_user_id;
 		$data['config']['pagination_limit']		= $this->AC_SETTINGS->pagination_limit;
 		$data['config']['users_table']			= $this->AC_SETTINGS->users_table;
 		$data['config']['users_col_id']			= $this->AC_SETTINGS->users_col_id;
 		$data['config']['users_col_email']		= $this->AC_SETTINGS->users_col_email;
 		$data['config']['notification_type']	= $this->AC_SETTINGS->notification_type;
+		$data['config']['footer_text'] 			= $this->AC_SETTINGS->footer_text;
+		$data['config']['footer_url'] 			= $this->AC_SETTINGS->footer_url;
 		
 		return $this->format_json($data);
     }
@@ -521,19 +521,25 @@ class ApiController extends Controller
 		//check admin authentication
 		$this->check_admin(true);
 
+        if(env('DEMO_MODE', 0))
+        {
+            $data = array('status' => false, 'response'=> 'DEMO MODE');
+			return $this->format_json($data);
+        }
+
 		// input and validate
 		$validator = Validator::make($request->all(), [
 			'site_name'				=> 'required',
-			'footer_text'			=> 'required',
 			'admin_user_id' 		=> 'required|numeric|min:1|regex:^[1-9][0-9]*$^',
-			'session_user_id'       => 'required',
 			'pagination_limit'      => 'required|numeric|min:1|regex:^[1-9][0-9]*$^',
-			'img_upload_path'		=> 'required',
-			'assets_path'			=> 'required',
-			'users_table'			=> 'required',
-			'users_id'				=> 'required',
-			'users_email'			=> 'required',
-			'notification_type'     => 'required|numeric',
+			'img_upload_path'		=> 'string|required',
+			'assets_path'			=> 'string|required',
+			'users_table'			=> 'string|required',
+			'users_id'				=> 'string|required',
+			'users_email'			=> 'string|required',
+			'notification_type'     => 'numeric',
+			'footer_text'			=> 'string|nullable',
+			'footer_url'			=> 'string|nullable',
 		]);
 		
 		if($validator->fails())
@@ -568,8 +574,8 @@ class ApiController extends Controller
 
 		$data['site_name']			= $validator->valid()['site_name'];
 		$data['footer_text']	    = $request->footer_text;
+		$data['footer_url']	        = $request->footer_url;
 		$data['admin_user_id']		= $validator->valid()['admin_user_id'];
-		$data['session_user_id']	= $request->session_user_id;
 		$data['pagination_limit']	= $validator->valid()['pagination_limit'];
 		$data['img_upld_pth']		= $validator->valid()['img_upload_path'];
 		$data['assets_path']		= $validator->valid()['assets_path'];

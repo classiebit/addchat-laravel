@@ -117,4 +117,5 @@ return [
     'widget_config'             => "小部件配置",
     'realtime'                  => "实时",
     'notification'              => "通知",
+    'logout_login'              => 'Logout & Login again to see effects',
 ];
