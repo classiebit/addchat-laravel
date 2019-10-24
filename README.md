@@ -1,4 +1,4 @@
-# Introduction
+# AddChat Laravel Lite
 
 Welcome to AddChat Laravel Lite.
 
