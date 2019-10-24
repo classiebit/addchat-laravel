@@ -2,6 +2,14 @@
 
 Welcome to AddChat Laravel Lite.
 
+### All-in-one multi-purpose Chat Widget Laravel Pacakge
+
+AddChat is a new chatting friend of Laravel. It's a standalone Chat widget that uses the website's existing `users` base, and let website users chat with each other. 
+
+<br>
+
+You get full source-code, hence AddChat lives and runs on your server/hosting including database. And therefore, you get complete privacy over your data. Either you're a big corporate sector or a small business. AddChat is for everyone.
+
 ---
 
 #### Read the documentation live - [AddChat Laravel Lite Docs](https://addchat-docs.classiebit.com)
@@ -17,15 +25,6 @@ Welcome to AddChat Laravel Lite.
 > **Here's a complete video tutorial guide for getting started quickly [AddChat Laravel Academy](https://classiebit.com/academy/addchat-laravel/getting-started) ✌️**
 
 ---
-
-### All-in-one multi-purpose Chat Widget Laravel Pacakge
-
-AddChat is a new chatting friend of Laravel. It's a standalone Chat widget that uses the website's existing `users` base, and let website users chat with each other. 
-
-<br>
-
-You get full source-code, hence AddChat lives and runs on your server/hosting including database. And therefore, you get complete privacy over your data. Either you're a big corporate sector or a small business. AddChat is for everyone.
-
 
 ## Overview
 
