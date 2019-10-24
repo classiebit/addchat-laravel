@@ -68,7 +68,7 @@ class InstallCommand extends Command
         $this->info('Initiate the installation process...');
 
         // 1. Publish the core assets defined in the AddchatServiceProvider
-        $this->info('1. Publishing Addchat core assets: config, languages & dummy content');
+        $this->info('1. Publishing Addchat core assets: config & languages');
         $this->call('vendor:publish', ['--provider' => AddchatServiceProvider::class]);
 
         // 2. Run Addchat migrations

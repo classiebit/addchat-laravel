@@ -65,9 +65,6 @@ class AddchatServiceProvider extends ServiceProvider
             'resources' => [
                 "{$publishablePath}/lang" => resource_path('lang/vendor/addchat')
             ],
-            'storage' => [
-                "{$publishablePath}/dummy_content/" => storage_path('app/public')
-            ],
             'public' => [
                 "{$publishablePath}/assets"     => public_path('assets'),
             ],
