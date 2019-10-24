@@ -255,13 +255,10 @@ AddChat can be installed via composer. Smooth... 🍻
             data-csrftoken="<?php echo csrf_token() ?>"
         ></div>
 
-
         
         <!-- **** your site other content **** -->
 
 
-
-        <!-- 3. AddChat JS -->
         <!-- 3. AddChat JS -->
         <!-- Modern browsers -->
         <script type="module" src="<?php echo asset('assets/addchat/js/addchat.min.js') ?>"></script>
