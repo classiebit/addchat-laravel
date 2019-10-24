@@ -1,9 +1,21 @@
 {
     "name": "classiebit/addchat-laravel",
     "version": "1.0.0",
-    "description": "Addchat Laravel",
-    "type": "library",
+    "description": "Addchat Laravel Lite",
+    "keywords": [
+        "addchat-laravel-lite",
+        "laravel chat",
+        "laravel live chat package",
+        "laravel",
+        "laravel-package",
+        "vuejs"
+    ],
     "license": "MIT",
+    "homepage": "https://classiebit.com/addchat-laravel",
+    "support": {
+        "issues": "https://github.com/classiebit/addchat-laravel/issues",
+        "source": "https://github.com/classiebit/addchat-laravel"
+    },
     "authors": [
         {
             "name": "Classiebit",
@@ -17,6 +29,7 @@
         }
     },
     "minimum-stability": "stable",
+    "prefer-stable" : true,
     "extra": {
         "laravel": {
             "providers": [
