@@ -124,6 +124,8 @@ class AddchatModel extends Model
         ->where(array("$this->ac_messages_tb.m_from"=>$login_user_id, "$this->ac_messages_tb.m_to"=>$params['user_id']))
         ->update(array("m_from_delete"=>1));
 
+        $query = DB::table($this->ac_messages_tb);
+        
         $query
         ->where(array("$this->ac_messages_tb.m_to"=>$login_user_id, "$this->ac_messages_tb.m_from"=>$params['user_id']))
         ->update(array("m_to_delete"=>1));

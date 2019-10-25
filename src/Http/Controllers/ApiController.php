@@ -33,6 +33,7 @@ class ApiController extends Controller
     */
     public function get_config()
     { 
+		
 		// init config in each method
 		$this->init_config();
 
@@ -577,7 +578,7 @@ class ApiController extends Controller
 		$data['footer_url']	        = $request->footer_url;
 		$data['admin_user_id']		= $validator->valid()['admin_user_id'];
 		$data['pagination_limit']	= $validator->valid()['pagination_limit'];
-		$data['img_upld_pth']		= $validator->valid()['img_upload_path'];
+		$data['img_upload_path']	= $validator->valid()['img_upload_path'];
 		$data['assets_path']		= $validator->valid()['assets_path'];
 		$data['users_table']		= $validator->valid()['users_table'];
 		$data['users_col_id']		= $validator->valid()['users_id'];
