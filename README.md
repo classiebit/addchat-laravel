@@ -139,8 +139,8 @@ AddChat is compatible with all languages and timezones. AddChat auto adapts and 
 
 - **AddChat Laravel Pro**
 
-    + [Live](https://addchat-laravel-pro.classiebit.com) - Coming soon
-    + [Purchase](https://classiebit.com/addchat-laravel-pro) - Subscribe now for notifications, will be soon available for Purchase here
+    + [Live](https://addchat-laravel-pro.classiebit.com) - Live preview available now.
+    + [Purchase](https://classiebit.com/addchat-laravel-pro) - Available for purchase now - Flat 50% Off (limited time offer)
 
 
 ---
