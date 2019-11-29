@@ -36,7 +36,7 @@ You get full source-code, hence AddChat lives and runs on your server/hosting in
 4. Customer support (<larecipe-badge type="black" circle icon="fa fa-lock"></larecipe-badge> Pro)
 5. Multi-user groups (<larecipe-badge type="black" circle icon="fa fa-lock"></larecipe-badge> Pro)
 
-and a lot more features coming up in **AddChat Pro** ⚡️
+and a lot more features available in **AddChat Pro** ⚡️
 
 
 ## Why AddChat ?
