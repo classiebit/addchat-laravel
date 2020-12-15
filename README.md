@@ -158,7 +158,7 @@ AddChat can be installed via composer. Smooth... 🍻
 
 ### Prerequisites
 
-* Laravel version 5.5 / 5.6 / 5.7 / 5.8 / 6.x
+* Laravel version 5.5 / 5.6 / 5.7 / 5.8 / 6.x / 7.x / 8.x
 * Make sure to install AddChat package on a **Fresh** or **Existing** Laravel application. 
 * We also assume that you've setup the database.
 * If you're running MySql version older than < 5.7 then disable strict mode in Laravel `config/database.php` `'strict' => false`
