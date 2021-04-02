@@ -28,7 +28,7 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Install the Addchat package';
+    protected $description = 'Install the Addchat Laravel Lite package';
 
     protected function getOptions()
     {
@@ -78,7 +78,7 @@ class InstallCommand extends Command
         // ---- Check if everything good so far ----
         $this->info('---- Dumping the autoloaded files and reloading all new files ----');
         $composer = $this->findComposer();
-        $process = new Process($composer.' dump-autoload');
+        $process = new Process([$composer.' dump-autoload']);
         // Setting timeout to null to prevent installation from stopping at a certain point in time
         $process->setTimeout(null); 
         $process->setWorkingDirectory(base_path())->run();
@@ -102,6 +102,6 @@ class InstallCommand extends Command
         $this->call('storage:link');
         
         // Finish
-        $this->info('Congrats!!! Addchat installed successfully! Wish you all the best :)');
+        $this->info('Congrats! Addchat Laravel Lite installed successfully. Good Luck :)');
     }
 }
