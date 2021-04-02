@@ -1,6 +1,6 @@
 {
     "name": "classiebit/addchat-laravel",
-    "version": "1.0.4",
+    "version": "1.0.6",
     "description": "Live chat widget for Laravel that also includes multi-user chat, group permissions, customer support chat & more.",
     "keywords": [
         "laravel",
